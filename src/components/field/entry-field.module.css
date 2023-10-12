@@ -1,0 +1,34 @@
+.entryField {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, .1);
+    width: 100%;
+    color: #fff;
+    display: block;
+    /*margin-bottom:15px;*/
+}
+
+.entryField::placeholder {
+    color: rgba(255, 255, 255, .5);;
+    font-size: 13px;
+    text-transform: uppercase;
+
+}
+.labelField {
+    margin-top: 10px;
+    color: #aaa;
+    font-size: 12px;
+    width: 100%;
+    display: block;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+.errorField{
+    text-align: center;
+    padding: 5px;
+    color: rgb(192, 34, 34);
+    font-size: 13px;
+    font-weight: 600;
+}

@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+.App{
+    top: 20vh;
+    width:100%;
+    margin:auto;
+    max-width:525px;
+    min-height:670px;
+    position:relative;
+    background:url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg) no-repeat center;
+    box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.loginHtml{
+    width:100%;
+    height:100%;
+    position:absolute;
+    padding:50px 70px 50px 70px;
+    background:rgba(40,57,101,.9);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.loginHtml h2 {
+   text-align: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.button{
+    width:100%;
+    padding:10px 30px;
+    text-align:center;
+    margin:10px auto;
+    display:block;
+    border-radius:25px;
+    background:linear-gradient(to right, #25aae1, #4481eb);
+    border:none;
+    cursor:pointer;
+    font-size:18px;
+    color:#fff;
+    transition:0.25s;
 }
-
-.App-link {
-  color: #61dafb;
+.button:hover{
+    opacity:0.8;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:disabled{
+    background:linear-gradient(to right, #18779f, #3360af);
+    opacity:0.5;
+    cursor:default;
 }

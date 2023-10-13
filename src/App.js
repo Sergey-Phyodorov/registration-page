@@ -1,5 +1,4 @@
 import './App.css';
-import './App.css';
 import { EntryField } from './components/field/entry-field';
 import { useState, useRef, useEffect } from 'react';
 
@@ -92,7 +91,7 @@ function App() {
 
     const onSubmit = (event) => {
         event.preventDefault();
-        console.log({ email });
+        console.log({ email, password, repeatPassword });
     };
 
     const allFieldsValid = Object.values(validationConfirms.current).every(value => value);
